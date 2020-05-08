@@ -1,9 +1,12 @@
 @import "theme/handisoutien_variables";
+
 @import "assets/bootstrap4";
 @import "../src/sass/understrap/understrap/understrap";
 @import "../src/sass/understrap/theme/contact-form7";
-
 @import "assets/font-awesome";
 @import "assets/underscores";
 
 @import "theme/handisoutien";
+@import "theme/layout";
+@import "theme/header";
+@import "theme/menu";

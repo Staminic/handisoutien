@@ -1,0 +1,58 @@
+.header-above {
+  padding-top: $spacer / 3;
+  padding-bottom: $spacer / 3;
+  background-color: $alefpa-light-blue;
+
+  .widget_search {
+    .btn {
+      line-height: 0;
+    }
+  }
+
+  .alefpa-backlink {
+    margin-right: $spacer;
+    margin-bottom: 0;
+    margin-left: $spacer;
+
+    a {
+      padding-right: $spacer * 2;
+      background: url("../img/alefpa-picto.svg") 100% 0 no-repeat scroll
+        transparent;
+      color: $alefpa-blue;
+      font-size: $font-size-base;
+      font-weight: $font-weight-semibold;
+      text-decoration: none;
+    }
+  }
+}
+
+#wrapper-navbar {
+  background-color: $white;
+}
+
+.navbar {
+  flex-direction: column;
+}
+
+.brand {
+  text-align: center;
+
+  .navbar-brand {
+    margin: 0;
+    font-size: $font-size-base * 2.875;
+    font-weight: $font-weight-semibold;
+    color: $alefpa-blue;
+    text-transform: uppercase;
+  }
+
+  .site-description {
+    line-height: $headings-line-height;
+    font-size: $font-size-base * 1.75;
+    color: $alefpa-blue;
+
+    @include media-breakpoint-up(xl) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

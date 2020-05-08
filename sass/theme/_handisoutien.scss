@@ -1,3 +1,16 @@
 body {
-  background-color: green;
+  background-color: $alefpa-blue;
+  font-size: $font-size-body;
+}
+
+h1,
+h2,
+h3 {
+  line-height: $headings-line-height;
+}
+
+h1 {
+  color: $alefpa-blue;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
 }

@@ -1,0 +1,29 @@
+@include media-breakpoint-up(md) {
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: $headings-line-height;
+
+    &:first-child {
+      .nav-link {
+        font-size: $font-size-body !important;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-expand-md {
+  .navbar-nav {
+    .nav-link {
+      font-size: $font-size-base;
+      color: $alefpa-blue;
+      text-align: center;
+    }
+  }
+}

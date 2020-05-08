@@ -31,3 +31,32 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'handisoutien', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+// Enqueue Google Fonts
+function add_google_fonts() {
+	wp_enqueue_style( 'add_google_fonts', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap', false );
+}
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
+
+// Register Widget positions
+add_action( 'widgets_init', 'handisoutien_widgets_init' );
+if ( ! function_exists( 'handisoutien_widgets_init' ) ) {
+	function handisoutien_widgets_init() {
+		register_sidebar(
+			array(
+                'id' => 'header_above',
+                'name' => __( 'Header above', 'handisoutien' ),
+                'description' => __( 'Zone de widgets au dessus du Header', 'handisoutien' ),
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div>',
+                'before_title' => '<h4 class="widgettitle">',
+                'after_title' => '</h4>',			
+            )
+        );
+    }
+}
+
+// Dashicons
+add_action( 'wp_enqueue_scripts', function() {
+    wp_enqueue_style( 'dashicons' );
+} );
