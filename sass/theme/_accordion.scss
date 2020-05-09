@@ -1,0 +1,60 @@
+.c-accordion__item {
+  padding: $spacer / 1.5 0;
+  border-bottom: 2px solid $medico-social;
+
+  &:first-child {
+    border-top: 2px solid $medico-social;
+  }
+
+  .wp-block-navigation__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .wp-block-navigation-link {
+      width: 60%;
+      margin-bottom: $spacer;
+      padding: 0;
+
+      .wp-block-navigation-link__content {
+        width: 100%;
+        padding: $spacer * 0.75;
+        background-color: $medico-social;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        color: $white;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        text-align: center;
+      }
+
+      &:nth-child(2) {
+        .wp-block-navigation-link__content {
+          background-color: $blue-link-two;
+        }
+      }
+
+      &:nth-child(3) {
+        .wp-block-navigation-link__content {
+          background-color: $alefpa-blue;
+        }
+      }
+    }
+  }
+}
+
+.c-accordion__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  &::after {
+    color: $medico-social;
+    font-weight: $font-weight-bold;
+  }
+
+  &::before {
+    content: url(../img/picto-assurance-maladie.png);
+    margin-right: $spacer / 2;
+  }
+}

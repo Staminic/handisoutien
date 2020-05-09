@@ -35,24 +35,69 @@
 }
 
 .brand {
+  display: flex;
+  justify-content: space-between;
+  padding-top: $spacer;
+  padding-right: $spacer;
+  padding-bottom: 0;
+  padding-left: $spacer;
+  @include media-breakpoint-up(sm) {
+    padding-bottom: $spacer * 2;
+  }
   text-align: center;
+
+  > a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   .navbar-brand {
     margin: 0;
-    font-size: $font-size-base * 2.875;
+    font-size: $font-size-base * 1.5;
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-base * 2.875;
+    }
+
     font-weight: $font-weight-semibold;
+    line-height: 1;
     color: $alefpa-blue;
     text-transform: uppercase;
   }
 
   .site-description {
+    margin: 0;
     line-height: $headings-line-height;
-    font-size: $font-size-base * 1.75;
-    color: $alefpa-blue;
-
-    @include media-breakpoint-up(xl) {
-      max-width: 80%;
-      margin: 0 auto;
+    font-size: $font-size-sm;
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-base * 1.75;
     }
+
+    color: $alefpa-blue;
+    max-width: 75%;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 90%;
+    }
+  }
+
+  .group-logos {
+    flex: 0 1 120px;
+    @include media-breakpoint-up(lg) {
+      flex: 1 0 200px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $spacer;
+  }
+
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
   }
 }

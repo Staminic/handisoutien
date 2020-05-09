@@ -53,6 +53,18 @@ if ( ! function_exists( 'handisoutien_widgets_init' ) ) {
                 'after_title' => '</h4>',			
             )
         );
+
+        register_sidebar(
+            array(
+                'id' => 'ocs_btn',
+                'name' => __( 'Offcanvas button', 'handisoutien' ),
+                'description' => __( 'Bouton du menu mobile', 'handisoutien' ),
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget' => '</div>',
+                'before_title' => '<h4 class="widgettitle">',
+                'after_title' => '</h4>',
+            )
+        );
     }
 }
 
@@ -60,3 +72,13 @@ if ( ! function_exists( 'handisoutien_widgets_init' ) ) {
 add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_style( 'dashicons' );
 } );
+
+// Change widget wrapper tag inside OCS offcanvas
+add_filter( 'ocs_register_sidebar_args', 'custom_ocs_sidebar_args', 10, 3 );
+function custom_ocs_sidebar_args( $args, $sidebar_id, $sidebar_data ) {
+	$args['before_widget'] = '<div id="%1$s" class="widget %2$s">';
+	$args['after_widget'] = '</div>';
+	$args['before_title'] = '<h3 class="widget-title widgettitle">';
+	$args['after_title'] = '</h3>';
+  return $args;
+}

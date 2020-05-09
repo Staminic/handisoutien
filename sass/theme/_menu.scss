@@ -1,29 +1,72 @@
-@include media-breakpoint-up(md) {
-  .menu-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: $headings-line-height;
-
-    &:first-child {
-      .nav-link {
-        font-size: $font-size-body !important;
-
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-.navbar-expand-md {
+[class*="navbar-expand"] {
   .navbar-nav {
     .nav-link {
       font-size: $font-size-base;
       color: $alefpa-blue;
       text-align: center;
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  [class*="navbar-expand"] {
+    position: relative;
+    top: -20px;
+
+    &.navbar {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .navbar-nav {
+      background-color: $white;
+      border: 1px solid $alefpa-blue;
+
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: $nav-link-padding-y;
+        margin-bottom: $nav-link-padding-y;
+        line-height: 1.125;
+        border-right: 1px solid $alefpa-blue;
+
+        .nav-link {
+          padding-top: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+
+          span {
+            padding-right: $nav-link-padding-x;
+            padding-left: $nav-link-padding-x;
+          }
+
+          .fa-home {
+            padding-right: $nav-link-padding-x;
+            padding-left: $nav-link-padding-x;
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        &:first-child {
+          .nav-link {
+            font-size: $font-size-body !important;
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
 }

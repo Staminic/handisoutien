@@ -1,5 +1,4 @@
 body {
-  background-color: $alefpa-blue;
   font-size: $font-size-body;
 }
 
@@ -13,4 +12,65 @@ h1 {
   color: $alefpa-blue;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
+}
+
+h2 {
+  color: $social;
+  font-weight: $font-weight-bold;
+
+  &[id] {
+    position: relative;
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: flex;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      background-color: $white;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 100%;
+      height: 3px;
+      transform: translateY(-50%);
+      background-color: $social;
+    }
+  }
+}
+
+h3 {
+  color: $medico-social;
+  font-size: $h4-font-size;
+}
+
+.entry-content {
+  a {
+    color: $social;
+    text-decoration: underline;
+
+    &[target*="_blank"] {
+      &::after {
+        content: "\f504";
+        display: inline-block;
+        vertical-align: -4px;
+        font-family: "dashicons";
+      }
+    }
+  }
+}
+
+.lead {
+  font-size: $font-size-base * 1.5;
+  color: $alefpa-blue;
 }
