@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in page.php
+ * Santé content partial template.
  *
  * @package understrap
  */
@@ -45,3 +45,5 @@ defined( 'ABSPATH' ) || exit;
 	</div>
 
 </article>
+
+<a class="back-to-summary" href="/sante"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Santé</a>

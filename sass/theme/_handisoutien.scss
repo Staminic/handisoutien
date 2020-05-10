@@ -18,11 +18,11 @@ h2 {
   color: $social;
   font-weight: $font-weight-bold;
 
-  &[id] {
+  &[id]:not(.c-accordion__title) {
     position: relative;
     display: flex;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: $spacer * 5;
+    margin-bottom: $spacer * 2;
     justify-content: center;
     align-items: center;
 
@@ -52,6 +52,22 @@ h2 {
 h3 {
   color: $medico-social;
   font-size: $h4-font-size;
+  font-weight: $font-weight-semibold;
+}
+
+h4 {
+  font-weight: $font-weight-bold;
+}
+
+h5 {
+  color: $medico-social;
+  font-weight: $font-weight-semibold;
+}
+
+h6 {
+  color: $medico-social;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
 }
 
 .entry-content {
@@ -73,4 +89,49 @@ h3 {
 .lead {
   font-size: $font-size-base * 1.5;
   color: $alefpa-blue;
+}
+
+p.clearfix {
+  margin: 0;
+}
+
+a.back-to-summary {
+  position: absolute;
+  bottom: $spacer;
+  left: $spacer * 2;
+  color: $social;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+}
+
+.list-unstyled {
+  &.numbers {
+    li {
+      display: flex;
+      margin-bottom: $spacer;
+
+      img {
+        width: 30px;
+        max-width: none;
+        height: 30px;
+        margin-right: $spacer / 2;
+      }
+
+      a {
+        margin-left: $spacer * 0.25;
+      }
+    }
+  }
+}
+
+.phone-number {
+  display: inline-block;
+  padding: 0 $spacer * 1.5;
+  margin: $spacer / 4;
+  background-color: $social;
+  color: $white;
+  border: 2px solid $white;
+  border-radius: 100px;
+  font-size: 1.25em;
+  font-weight: $font-weight-black;
 }

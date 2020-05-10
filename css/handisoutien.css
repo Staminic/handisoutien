@@ -373,11 +373,11 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .lead {
@@ -14008,15 +14008,15 @@ h2 {
   color: #e7511e;
   font-weight: 700;
 }
-h2[id] {
+h2[id]:not(.c-accordion__title) {
   position: relative;
   display: flex;
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 2rem;
   justify-content: center;
   align-items: center;
 }
-h2[id] span {
+h2[id]:not(.c-accordion__title) span {
   display: flex;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -14025,7 +14025,7 @@ h2[id] span {
   z-index: 1;
   background-color: #ffffff;
 }
-h2[id]:after {
+h2[id]:not(.c-accordion__title):after {
   content: "";
   position: absolute;
   top: 50%;
@@ -14039,6 +14039,22 @@ h2[id]:after {
 h3 {
   color: #009ee0;
   font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+h5 {
+  color: #009ee0;
+  font-weight: 600;
+}
+
+h6 {
+  color: #009ee0;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .entry-content a {
@@ -14055,6 +14071,45 @@ h3 {
 .lead {
   font-size: 1.5rem;
   color: #00447a;
+}
+
+p.clearfix {
+  margin: 0;
+}
+
+a.back-to-summary {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  color: #e7511e;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.list-unstyled.numbers li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.list-unstyled.numbers li img {
+  width: 30px;
+  max-width: none;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+.list-unstyled.numbers li a {
+  margin-left: 0.25rem;
+}
+
+.phone-number {
+  display: inline-block;
+  padding: 0 1.5rem;
+  margin: 0.25rem;
+  background-color: #e7511e;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  font-size: 1.25em;
+  font-weight: 900;
 }
 
 .site {
@@ -14397,5 +14452,27 @@ article.page .wp-post-image {
 .c-accordion__title::before {
   content: url(../img/picto-assurance-maladie.png);
   margin-right: 0.5rem;
+}
+
+body.home article.page {
+  background-color: #00447a;
+}
+body.home .entry-content {
+  line-height: 1.2;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+body.home .entry-content h2 {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #e5ecf1;
+  color: #00447a;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+body.home .entry-content .small {
+  font-size: 60%;
 }
 /*# sourceMappingURL=handisoutien.css.map */

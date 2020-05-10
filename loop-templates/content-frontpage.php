@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in page.php
+ * Frontpage content partial template.
  *
  * @package understrap
  */
@@ -14,12 +14,6 @@ defined( 'ABSPATH' ) || exit;
 	<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
 
 	<div class="inner col-lg-10 offset-lg-1">
-
-		<header class="entry-header">
-
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		</header>
 
 		<div class="entry-content">
 

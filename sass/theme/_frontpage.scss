@@ -1,0 +1,26 @@
+body.home {
+  article.page {
+    background-color: $alefpa-blue;
+  }
+
+  .entry-content {
+    line-height: $headings-line-height;
+    color: $white;
+    font-size: $h2-font-size;
+    font-weight: $font-weight-bold;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      padding: $spacer 0;
+      background-color: $alefpa-light-blue;
+      color: $alefpa-blue;
+      font-size: $h1-font-size;
+      font-weight: $font-weight-semibold;
+    }
+
+    .small {
+      font-size: 60%;
+    }
+  }
+}
