@@ -18,11 +18,13 @@ $white: #ffffff;
 $blue-link-two: #0076bb;
 
 $primary: $alefpa-blue;
+$secondary: $social;
 
 $theme-colors: ();
 $theme-colors: map-merge(
   (
     "primary": $primary,
+    "secondary": $secondary,
     "white": $white,
   ),
   $theme-colors
