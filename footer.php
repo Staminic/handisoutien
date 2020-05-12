@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 					
-					<a href="#">Mentions légales</a>
+					<a href="/mentions-legales">Mentions légales</a>
 
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/alefpa-logo-blanc.png" alt="Logo de l'ALEFPA" />
 

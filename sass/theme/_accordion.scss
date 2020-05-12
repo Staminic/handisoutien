@@ -53,8 +53,94 @@
     font-weight: $font-weight-bold;
   }
 
-  &::before {
-    content: url(../img/picto-assurance-maladie.png);
-    margin-right: $spacer / 2;
+  &#at-40050 {
+    &::before {
+      content: url(../img/picto-assurance-maladie.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-69594 {
+    &::before {
+      content: url(../img/picto-soin.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-18946 {
+    &::before {
+      content: url(../img/picto-soutien.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-6131 {
+    &::before {
+      content: url(../img/picto-addiction.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-35574 {
+    &::before {
+      content: url(../img/picto-aide-a-domicile.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-19884 {
+    &::before {
+      content: url(../img/picto-deplacement.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-56770 {
+    &::before {
+      content: url(../img/picto-emploi.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-73945 {
+    &::before {
+      content: url(../img/picto-ccas.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-18365 {
+    &::before {
+      content: url(../img/picto-demarches.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-48322 {
+    &::before {
+      content: url(../img/picto-quotidien.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-37856 {
+    &::before {
+      content: url(../img/picto-pedagogie.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-21301 {
+    &::before {
+      content: url(../img/picto-covid-enfants.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-69132 {
+    &::before {
+      content: url(../img/picto-journee-enfants.png);
+      margin-right: $spacer / 2;
+    }
   }
 }

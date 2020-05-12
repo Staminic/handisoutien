@@ -1931,6 +1931,10 @@ pre code {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 68, 122, 0.25);
 }
+.form-control::-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors::-ms-input-placeholder, .wpcf7 input[type=text]::-ms-input-placeholder, .wpcf7 input[type=search]::-ms-input-placeholder, .wpcf7 input[type=url]::-ms-input-placeholder, .wpcf7 input[type=tel]::-ms-input-placeholder, .wpcf7 input[type=number]::-ms-input-placeholder, .wpcf7 input[type=range]::-ms-input-placeholder, .wpcf7 input[type=date]::-ms-input-placeholder, .wpcf7 input[type=month]::-ms-input-placeholder, .wpcf7 input[type=week]::-ms-input-placeholder, .wpcf7 input[type=time]::-ms-input-placeholder, .wpcf7 input[type=datetime]::-ms-input-placeholder, .wpcf7 input[type=datetime-local]::-ms-input-placeholder, .wpcf7 input[type=color]::-ms-input-placeholder, .wpcf7 input[type=email]::-ms-input-placeholder, .wpcf7 input[type=file]::-ms-input-placeholder, .wpcf7 input[type=submit]::-ms-input-placeholder, .wpcf7 select::-ms-input-placeholder, .wpcf7 textarea::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
 .form-control::placeholder, .wpcf7 .wpcf7-validation-errors::placeholder, .wpcf7 input[type=text]::placeholder,
 .wpcf7 input[type=search]::placeholder,
 .wpcf7 input[type=url]::placeholder,
@@ -2867,6 +2871,7 @@ textarea.form-control, .wpcf7 textarea.wpcf7-validation-errors,
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4763,6 +4768,7 @@ input[type=button].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -4871,6 +4877,7 @@ input[type=button].btn-block {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 .custom-range:focus {
@@ -4926,7 +4933,8 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
@@ -6308,6 +6316,7 @@ button.close {
   background-color: transparent;
   border: 0;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 
@@ -14475,8 +14484,56 @@ article.page .wp-post-image {
   color: #009ee0;
   font-weight: 700;
 }
-.c-accordion__title::before {
+.c-accordion__title#at-40050::before {
   content: url(../img/picto-assurance-maladie.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-69594::before {
+  content: url(../img/picto-soin.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-18946::before {
+  content: url(../img/picto-soutien.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-6131::before {
+  content: url(../img/picto-addiction.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-35574::before {
+  content: url(../img/picto-aide-a-domicile.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-19884::before {
+  content: url(../img/picto-deplacement.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-56770::before {
+  content: url(../img/picto-emploi.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-73945::before {
+  content: url(../img/picto-ccas.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-18365::before {
+  content: url(../img/picto-demarches.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-48322::before {
+  content: url(../img/picto-quotidien.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-37856::before {
+  content: url(../img/picto-pedagogie.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-21301::before {
+  content: url(../img/picto-covid-enfants.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-69132::before {
+  content: url(../img/picto-journee-enfants.png);
   margin-right: 0.5rem;
 }
 
@@ -14545,9 +14602,10 @@ body.home .entry-content .small {
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  margin-top: 1.5rem;
+  color: #ffffff !important;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 /*# sourceMappingURL=handisoutien.css.map */
