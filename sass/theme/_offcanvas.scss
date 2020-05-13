@@ -16,6 +16,10 @@
       color: $sanitaire;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 }
 
 #ocs-menu-principal {

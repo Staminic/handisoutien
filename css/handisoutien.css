@@ -357,15 +357,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
 }
 
 h2, .h2 {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
 }
 
 h3, .h3 {
-  font-size: 1.625rem;
+  font-size: 1.3rem;
 }
 
 h4, .h4 {
@@ -373,11 +373,11 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h6, .h6 {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .lead {
@@ -13997,8 +13997,10 @@ a.skip-link {
   display: block;
 }
 
-body {
-  font-size: 1.25rem;
+@media (min-width: 576px) {
+  body {
+    font-size: 1.25rem;
+  }
 }
 
 h1,
@@ -14012,10 +14014,20 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
 
 h2 {
   color: #e7511e;
   font-weight: 700;
+}
+@media (min-width: 576px) {
+  h2 {
+    font-size: 1.75rem;
+  }
 }
 h2[id]:not(.c-accordion__title) {
   position: relative;
@@ -14051,6 +14063,11 @@ h3 {
   font-size: 1.5rem;
   font-weight: 700;
 }
+@media (min-width: 576px) {
+  h3 {
+    font-size: 1.625rem;
+  }
+}
 
 h4 {
   font-weight: 700;
@@ -14060,11 +14077,21 @@ h5 {
   color: #009ee0;
   font-weight: 600;
 }
+@media (min-width: 576px) {
+  h5 {
+    font-size: 1.5rem;
+  }
+}
 
 h6 {
   color: #009ee0;
   font-weight: 600;
   text-transform: uppercase;
+}
+@media (min-width: 576px) {
+  h6 {
+    font-size: 1.25rem;
+  }
 }
 
 .entry-title {
@@ -14351,6 +14378,11 @@ article.page .wp-post-image {
 .widget.off_canvas_control .ocs-toggle-menu-principal span {
   color: #f29400;
 }
+@media (min-width: 992px) {
+  .widget.off_canvas_control {
+    display: none;
+  }
+}
 
 #ocs-menu-principal.ocs-menu-principal {
   padding: 2rem;
@@ -14536,6 +14568,54 @@ article.page .wp-post-image {
   content: url(../img/picto-journee-enfants.png);
   margin-right: 0.5rem;
 }
+.c-accordion__title#at-78478::before {
+  content: url(../img/picto-protection-enfance.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-61820::before {
+  content: url(../img/picto-urgence-sociale.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-41219::before {
+  content: url(../img/picto-violences-familiales.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-69998::before {
+  content: url(../img/picto-services-protection.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-55917::before {
+  content: url(../img/picto-acteurs-medico-social.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-87850::before {
+  content: url(../img/picto-accompagnement-domicile.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-42854::before {
+  content: url(../img/picto-repit-repos.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-43300::before {
+  content: url(../img/picto-poly-handicap.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-43588::before {
+  content: url(../img/picto-autisme.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-79455::before {
+  content: url(../img/picto-gestes-barrieres.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-63644::before {
+  content: url(../img/picto-info.png);
+  margin-right: 0.5rem;
+}
+.c-accordion__title#at-27380::before {
+  content: url(../img/picto-deconfinement.png);
+  margin-right: 0.5rem;
+}
 
 body.home article.page {
   background-color: #00447a;
@@ -14543,7 +14623,7 @@ body.home article.page {
 body.home .entry-content {
   line-height: 1.2;
   color: #ffffff;
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-align: center;
 }
@@ -14552,7 +14632,7 @@ body.home .entry-content h2 {
   padding: 1rem 0;
   background-color: #e5ecf1;
   color: #00447a;
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 body.home .entry-content .small {
@@ -14607,5 +14687,13 @@ body.home .entry-content .small {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none !important;
+}
+
+.search .page-title {
+  color: #ffffff;
+}
+.search article {
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 /*# sourceMappingURL=handisoutien.css.map */
