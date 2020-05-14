@@ -11,9 +11,17 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+	<div class="hero">
+		
+		<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+		
+		<h2 class="h1">Covid-19</h2>
+
+	</div>
 
 	<div class="inner col-lg-10 offset-lg-1">
+
+		<?php echo do_shortcode( '[flexy_breadcrumb]'); ?>
 
 		<header class="entry-header">
 

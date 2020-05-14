@@ -14009,27 +14009,32 @@ h3 {
   line-height: 1.2;
 }
 
-h1 {
+h1,
+.h1 {
   color: #00447a;
   font-weight: 700;
   text-transform: uppercase;
 }
 @media (min-width: 576px) {
-  h1 {
+  h1,
+.h1 {
     font-size: 2.25rem;
   }
 }
 
-h2 {
+h2,
+.h2 {
   color: #e7511e;
   font-weight: 700;
 }
 @media (min-width: 576px) {
-  h2 {
+  h2,
+.h2 {
     font-size: 1.75rem;
   }
 }
-h2[id]:not(.c-accordion__title) {
+h2[id]:not(.c-accordion__title),
+.h2[id]:not(.c-accordion__title) {
   position: relative;
   display: flex;
   margin-top: 5rem;
@@ -14037,7 +14042,8 @@ h2[id]:not(.c-accordion__title) {
   justify-content: center;
   align-items: center;
 }
-h2[id]:not(.c-accordion__title) span {
+h2[id]:not(.c-accordion__title) span,
+.h2[id]:not(.c-accordion__title) span {
   display: flex;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -14047,7 +14053,8 @@ h2[id]:not(.c-accordion__title) span {
   background-color: #ffffff;
   text-align: center;
 }
-h2[id]:not(.c-accordion__title):after {
+h2[id]:not(.c-accordion__title):after,
+.h2[id]:not(.c-accordion__title):after {
   content: "";
   position: absolute;
   top: 50%;
@@ -14058,38 +14065,45 @@ h2[id]:not(.c-accordion__title):after {
   background-color: #e7511e;
 }
 
-h3 {
+h3,
+.h3 {
   color: #009ee0;
   font-size: 1.5rem;
   font-weight: 700;
 }
 @media (min-width: 576px) {
-  h3 {
+  h3,
+.h3 {
     font-size: 1.625rem;
   }
 }
 
-h4 {
+h4,
+.h4 {
   font-weight: 700;
 }
 
-h5 {
+h5,
+.h5 {
   color: #009ee0;
   font-weight: 600;
 }
 @media (min-width: 576px) {
-  h5 {
+  h5,
+.h5 {
     font-size: 1.5rem;
   }
 }
 
-h6 {
+h6,
+.h6 {
   color: #009ee0;
   font-weight: 600;
   text-transform: uppercase;
 }
 @media (min-width: 576px) {
-  h6 {
+  h6,
+.h6 {
     font-size: 1.25rem;
   }
 }
@@ -14689,11 +14703,52 @@ body.home .entry-content .small {
   text-decoration: none !important;
 }
 
+.hero {
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.hero h2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25em;
+  color: #ffffff;
+  text-shadow: 0 3px 6px black;
+}
+
 .search .page-title {
   color: #ffffff;
 }
 .search article {
   margin-bottom: 1rem;
   padding: 1rem;
+}
+
+.fbc-page {
+  position: relative;
+  top: -1rem;
+}
+.fbc-page .fbc-wrap .fbc-items li {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.fbc-page .fbc-wrap .fbc-items li:first-child {
+  padding-right: 0;
+  padding-left: 0;
 }
 /*# sourceMappingURL=handisoutien.css.map */
