@@ -14188,6 +14188,15 @@ figcaption {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+.fullwidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .site {
   display: flex;
   min-height: 100vh;
@@ -14504,12 +14513,18 @@ article.page .wp-post-image {
   justify-content: center;
 }
 .c-accordion__item .wp-block-navigation__container .wp-block-navigation-link {
-  width: 60%;
+  width: 99%;
   margin-bottom: 1rem;
   padding: 0;
 }
+@media (min-width: 992px) {
+  .c-accordion__item .wp-block-navigation__container .wp-block-navigation-link {
+    width: 60%;
+  }
+}
 .c-accordion__item .wp-block-navigation__container .wp-block-navigation-link .wp-block-navigation-link__content {
   width: 100%;
+  margin: 0 auto;
   padding: 0.75rem;
   background-color: #009ee0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
@@ -14655,6 +14670,15 @@ body.home .entry-content h2 {
 }
 body.home .entry-content .small {
   font-size: 60%;
+}
+body.home .carousel.partners {
+  padding: 0 1rem;
+  background-color: #ffffff;
+}
+body.home .carousel.partners h2 {
+  padding-bottom: 0;
+  background-color: #ffffff;
+  color: #000;
 }
 
 .gallery-menu .wp-block-group__inner-container {

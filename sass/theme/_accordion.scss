@@ -13,12 +13,18 @@
     justify-content: center;
 
     .wp-block-navigation-link {
-      width: 60%;
+      width: 99%;
+
+      @include media-breakpoint-up(lg) {
+        width: 60%;
+      }
+
       margin-bottom: $spacer;
       padding: 0;
 
       .wp-block-navigation-link__content {
         width: 100%;
+        margin: 0 auto;
         padding: $spacer * 0.75;
         background-color: $medico-social;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
