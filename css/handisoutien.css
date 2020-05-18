@@ -14300,6 +14300,10 @@ article.page .wp-post-image {
     max-width: 90%;
   }
 }
+.brand .site-description img {
+  margin: 0.5rem;
+  width: 250px;
+}
 .brand .group-logos {
   flex: 0 1 120px;
   display: flex;

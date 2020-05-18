@@ -35,8 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="brand bg-white">
 		
 			<div class="group-logos d-none d-lg-block">
-				<img class="img-fluid mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/alefpa-logo.png" />
-				<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/handi-soutien-974-numero-vert.jpg" />
+				<img class="img-fluid my-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/alefpa-logo.png" />
 			</div>
 
 			<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
@@ -46,7 +45,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php if ( is_front_page() && is_home() ) : ?>
 
 						<h1 class="navbar-brand mb-0">
+							
 							<?php bloginfo( 'name' ); ?>
+						
 						</h1>
 
 					<?php else : ?>
@@ -60,22 +61,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 					the_custom_logo();
 				} ?>
 
-				<p class="site-description"><?php bloginfo('description'); ?></p>
+				<p class="site-description"><?php bloginfo('description'); ?><br />
+				
+					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/handi-soutien-974-numero-vert.jpg" />
+
+				</p>
 				
 			</a>
 
 			<div class="group-logos d-none d-lg-block">
-				<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ars-la-reunion-logo.png" />
+				<img class="img-fluid my-2 w-75" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ars-la-reunion-logo.png" />
 			</div>
 
 			<div class="d-flex d-lg-none justify-content-center">
 				<div class="group-logos">
-					<img class="img-fluid mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/img/alefpa-logo.png" alt="Logo de l'ALEFPA" />
-					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/handi-soutien-974-numero-vert.jpg" alt="Numéro vert Handi-soutien 974"/>
+					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/alefpa-logo.png" alt="Logo de l'ALEFPA" />
 				</div>
 
 				<div class="group-logos">
-					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ars-la-reunion-logo.png" alt="Logoe de l'ARS La Réunion" />
+					<img class="img-fluid w-75" src="<?php echo get_stylesheet_directory_uri(); ?>/img/ars-la-reunion-logo.png" alt="Logoe de l'ARS La Réunion" />
 				</div>
 			</div>
 

@@ -80,6 +80,11 @@
     @include media-breakpoint-up(lg) {
       max-width: 90%;
     }
+
+    img {
+      margin: $spacer / 2;
+      width: 250px;
+    }
   }
 
   .group-logos {
