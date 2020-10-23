@@ -1,5 +1,5 @@
 .c-accordion__item {
-  padding: $spacer / 1.5 0;
+  padding: ($spacer / 1.5) 0;
   border-bottom: 2px solid $medico-social;
 
   &:first-child {
@@ -12,17 +12,19 @@
     align-items: center;
     justify-content: center;
 
-    .wp-block-navigation-link {
+    // .wp-block-navigation-link {
+    .wp-block-pb-accordion-item {
       width: 99%;
 
       @include media-breakpoint-up(lg) {
-        width: 60%;
+        width: 66%;
       }
 
       margin-bottom: $spacer;
       padding: 0;
 
       .wp-block-navigation-link__content {
+        display: block;
         width: 100%;
         margin: 0 auto;
         padding: $spacer * 0.75;
