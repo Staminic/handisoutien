@@ -235,4 +235,11 @@
       margin-right: $spacer / 2;
     }
   }
+
+  &#at-54325 {
+    &::before {
+      content: url(../img/picto-ballon.png);
+      margin-right: $spacer / 2;
+    }
+  }
 }
