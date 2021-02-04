@@ -210,7 +210,7 @@
 
   &#at-43588 {
     &::before {
-      content: url(../img/picto-autisme.png);
+      content: url(../img/picto-ecole-inclusive.png);
       margin-right: $spacer / 2;
     }
   }
@@ -240,6 +240,52 @@
     &::before {
       content: url(../img/picto-ballon.png);
       margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-501 {
+    &::before {
+      content: url(../img/picto-soutien-aidants.png);
+      margin-right: $spacer / 2;
+    }
+  }
+
+  &#at-31941 {
+    &::before {
+      content: url(../img/picto-solidarite.png);
+      margin-right: $spacer / 2;
+    }
+  }
+}
+
+.post-48 {
+  .c-accordion__title {
+    &#at-43588 {
+      &::before {
+        content: url(../img/picto-poly-handicap.png);
+        margin-right: $spacer / 2;
+      }
+    }
+
+    &#at-21301 {
+      &::before {
+        content: url(../img/picto-handicap-psy.png);
+        margin-right: $spacer / 2;
+      }
+    }
+
+    &#at-43300 {
+      &::before {
+        content: url(../img/picto-deficiences-sensorielles.png);
+        margin-right: $spacer / 2;
+      }
+    }
+
+    &#at-42854 {
+      &::before {
+        content: url(../img/picto-handicap-moteur.png);
+        margin-right: $spacer / 2;
+      }
     }
   }
 }
