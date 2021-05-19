@@ -20,14 +20,14 @@
         width: 66%;
       }
 
-      margin-bottom: $spacer;
+      margin: 0 0 $spacer 0 !important;
       padding: 0;
 
       .wp-block-navigation-link__content {
         display: block;
         width: 100%;
         margin: 0 auto;
-        padding: $spacer * 0.75;
+        padding: $spacer * 0.75 !important;
         background-color: $medico-social;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
         color: $white;
