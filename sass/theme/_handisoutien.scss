@@ -103,21 +103,21 @@ h6,
   margin-bottom: $spacer * 2;
 }
 
-.entry-content {
-  a:not(.noicon) {
-    color: $social;
-    text-decoration: underline;
+// .entry-content {
+//   a:not(.noicon) {
+//     color: $social;
+//     text-decoration: underline;
 
-    &[target*="_blank"] {
-      &::after {
-        content: "\f504";
-        display: inline-block;
-        vertical-align: -4px;
-        font-family: "dashicons";
-      }
-    }
-  }
-}
+//     &[target*="_blank"] {
+//       &::after {
+//         content: "\f504";
+//         display: inline-block;
+//         vertical-align: -4px;
+//         font-family: "dashicons";
+//       }
+//     }
+//   }
+// }
 
 .lead {
   font-size: $font-size-base * 1.5;

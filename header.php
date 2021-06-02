@@ -63,7 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<p class="site-description"><?php bloginfo('description'); ?><br />
 				
-					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/handi-soutien-974-numero-vert.jpg" />
+					<img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/numero-vert-2.png" />
 
 				</p>
 				

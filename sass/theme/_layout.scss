@@ -13,7 +13,7 @@
 }
 
 #ocs-site {
-  &[canvas="container"] {
+  &[data-canvas="container"] {
     background-color: $alefpa-blue;
   }
 }

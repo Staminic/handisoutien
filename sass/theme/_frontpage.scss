@@ -1,6 +1,10 @@
 body.home {
   article.page {
     background-color: $alefpa-blue;
+
+    .inner {
+      padding-bottom: 0;
+    }
   }
 
   .entry-content {
@@ -13,8 +17,8 @@ body.home {
     h2 {
       margin: 0;
       padding: $spacer 0;
-      background-color: $alefpa-light-blue;
-      color: $alefpa-blue;
+      // background-color: $alefpa-light-blue;
+      color: $white;
       font-size: $h1-font-size;
       font-weight: $font-weight-semibold;
     }
